@@ -82,7 +82,7 @@ void Card::topupCash(int money, int carNumber, int PIN)
 void Card::withdrawCash(int money, int PIN)
 {
 	if (this->PIN != PIN) cout << "Error: PIN is not correct!!!\n";
-	else if (money > cash) cout << "Error:money > cash!!!\n ";
+	else if (money > cash) cout << "Error: money > cash!!!\n ";
 	else {
 		cash -= money;
 	}

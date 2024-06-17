@@ -29,6 +29,16 @@ int main()
 	cout << "Card: " << privat->getCardNumber() << ", PIN: " << privat->getPIN() << endl;
 
 	cout << "===========================================\n\n";
+	cout << "Topup cash-> "; cin >> a;
+	cout << "Input PIN: "; cin >> b;
+	privat->topupCash(a, privat->getCardNumber(), b);
+	cout << "\t Card: " << privat->getCardNumber() << " Cash: " << privat->getCash() << endl;
+	cout << "===========================================\n\n";
+	cout << "Withdraw cash-> "; cin >> a;
+	cout << "Input PIN: "; cin >> b;
+	privat->withdrawCash(a, b);
+	cout << "\t Card: " << privat->getCardNumber() << " Cash: " << privat->getCash() << endl;
+
 	delete privat;
 }
 
