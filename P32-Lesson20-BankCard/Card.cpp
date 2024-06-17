@@ -39,6 +39,24 @@ Card::~Card()
 	cout << "Closed card: " << cardNumber << endl;
 }
 
+int Card::getCardNumber(){		return cardNumber;}
+
+const char* Card::getName(){	return name;}
+
+const char* Card::getExpDate(){	return expiredDate;}
+
+int Card::getPIN(){		return PIN;}
+
+double Card::getCash(){		return cash;}
+
+void Card::setPIN(int oldPIN, int newPIN)
+{
+	if (oldPIN == PIN) {
+		PIN = newPIN;
+	}
+	else cout << "Error: PIN is not correct!!!\n";
+}
+
 void Card::showInfo()
 {
 	cout << "\n++++++++++++++++++++++++++++++++++\n";
