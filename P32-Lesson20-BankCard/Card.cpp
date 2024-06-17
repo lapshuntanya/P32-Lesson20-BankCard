@@ -71,8 +71,19 @@ void Card::showInfo()
 
 void Card::topupCash(int money, int carNumber, int PIN)
 {
+	if (money < 0) cout << "Error: money < 0!!!\n";
+	else if (this->cardNumber != carNumber) cout << "Error: carNumber not found!!!\n";
+	else if (this->PIN != PIN) cout << "Error: PIN is not correct!!!\n";
+	else {
+		cash += money;
+	}
 }
 
 void Card::withdrawCash(int money, int PIN)
 {
+	if (this->PIN != PIN) cout << "Error: PIN is not correct!!!\n";
+	else if (money > cash) cout << "Error:money > cash!!!\n ";
+	else {
+		cash -= money;
+	}
 }
