@@ -20,7 +20,7 @@ int main()
 
 	privat->showInfo();
 	 
-
+	 
 	delete privat;
 }
 

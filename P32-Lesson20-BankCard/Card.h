@@ -19,6 +19,16 @@ public:
 	Card(const char* client_name, double money); // Конструктор з параметрами
 	~Card(); //Деструктор
 
+	//          Аксесори - публічний констрольований доступ
+	int getCardNumber();
+	const char* getName();
+	const char* getExpDate();
+	int getPIN();
+	double getCash();
+
+	void setPIN(int oldPIN, int newPIN);
+
 	void showInfo();
+
 };
 
