@@ -19,8 +19,15 @@ int main()
 	}
 
 	privat->showInfo();
-	 
-	 
+	cout << "===========================================\n\n";
+	int a = 0, b = 0;
+	cout << "Input old PIN: "; cin >> a;
+	cout << "Input new PIN: "; cin >> b;
+
+	privat->setPIN(a, b);
+	cout << "Card: " << privat->getCardNumber() << ", PIN: " << privat->getPIN() << endl;
+
+	cout << "===========================================\n\n";
 	delete privat;
 }
 
