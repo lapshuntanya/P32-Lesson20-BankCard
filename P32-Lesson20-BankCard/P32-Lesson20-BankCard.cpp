@@ -19,6 +19,7 @@ int main()
 	}
 
 	privat->showInfo();
+
 	cout << "===========================================\n\n";
 	int a = 0, b = 0;
 	cout << "Input old PIN: "; cin >> a;

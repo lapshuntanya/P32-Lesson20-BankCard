@@ -68,3 +68,11 @@ void Card::showInfo()
 	cout << "|\tPIN:      " << PIN << endl;
 	cout << "++++++++++++++++++++++++++++++++++\n\n";
 }
+
+void Card::topupCash(int money, int carNumber, int PIN)
+{
+}
+
+void Card::withdrawCash(int money, int PIN)
+{
+}

@@ -25,10 +25,12 @@ public:
 	const char* getExpDate();
 	int getPIN();
 	double getCash();
-
 	void setPIN(int oldPIN, int newPIN);
 
 	void showInfo();
+
+	void topupCash(int money, int cardNumber, int PIN); //Поповнення картки
+	void withdrawCash(int money, int PIN); //Зняття коштів
 
 };
 
