@@ -33,6 +33,7 @@ int main()
 	cout << "Input PIN: "; cin >> b;
 	privat->topupCash(a, privat->getCardNumber(), b);
 	cout << "\t Card: " << privat->getCardNumber() << " Cash: " << privat->getCash() << endl;
+
 	cout << "===========================================\n\n";
 	cout << "Withdraw cash-> "; cin >> a;
 	cout << "Input PIN: "; cin >> b;
